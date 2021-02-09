@@ -9,7 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/", apiroutes);
 
-
 const exbhs = require("express-handlebars");
 app.engine("handlebars", exhbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars")
